@@ -1,0 +1,42 @@
+This text file is a tutorial/paragraph on how you can get your own songs in the
+music.play command. I hope this helps!
+
+
+                    ---DOWNLOAD YOUR OWN MUSIC!!!---
+
+To import your own songs here, you have to first download what you want to put on,
+if you already have your song, you have to drag and drop your song to the music
+folder in the kDocs-Terminal folder, the one you're in/working your files with.
+then after that, go to your command prompt and check your username, or you could
+go to the Terminal to see your username by clicking <View> on top then click
+<Terminal>. Then you should see your username. Then type an ID for the song, the
+ID should be 8 characters long, like this one: 08334572. Then after that, go to
+app.py and copy/type the following:
+
+
+
+
+                 if commandLine == cmdMUSIC + "(your song ID here)":
+            optional >>  print('Playing "(song path here)")
+                         playsound.playsound('(your song path here)')
+
+Hopefully this helped!
+
+
+If you didn't understand what a path is, let me show you.
+
+Path: An address for a file/folder that determines where the file/folder is at. For 
+example, the script I am writing this at, this is how one on macOS would look like:
+
+     /Users/(username of computer here)/(location of file/folder)/(name of file/folder)
+     If you're looking for a specific file in the folder then you can add the name and format of the file,
+     for example /Users/(username of computer here)/(location of file, example: Desktop)/(name of file/folder)/(name of file in folder)
+
+On windows, paths should look like this:
+
+     /C:Drive or This PC/(location of file/folder)/(name of file/folder)
+
+     if you are specifing a file in a folder then,
+
+     /C:Drive or This PC/(location of file/folder)/(name of file/folder)/(name of file in folder)
+
