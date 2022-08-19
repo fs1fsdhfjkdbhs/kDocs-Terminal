@@ -2,6 +2,7 @@
 
 import playsound
 from time import sleep as wait
+import pyautogui
 
 #Commands
 
@@ -21,7 +22,9 @@ if commandLine == cmdPRINT:
         print("ERROR: Cannot print nothing. (ERROR CODE 1296)")
         print("Please re-run the script for another command.")
     else:
-        print(PRINT_RESULT)
+        pyautogui.write(PRINT_RESULT, interval = 0.01)
+        pyautogui.press('enter')
+        wait(0.1)
         print("Please re-run the script for another command.")
 
 
@@ -31,16 +34,16 @@ if commandLine == cmdMUSICLIST:
 
 if commandLine == cmdMUSIC + ":12906438":
     print('Playing "KING KONG - MHD"')
-    playsound.playsound('/Users/nipeal/Desktop/kDocs-Terminal/music/KING KONG - MHD.mp3')
+    playsound.playsound('/kDocs-Terminal/music/KING KONG - MHD.mp3')
 elif commandLine == cmdMUSIC + ":23720508":
     print('Playing "Magnolia - Playboi Carti"')
-    playsound.playsound('/Users/nipeal/Desktop/kDocs-Terminal/music/Magnolia - Playboi Carti.mp3')
+    playsound.playsound('/kDocs-Terminal/music/Magnolia - Playboi Carti.mp3')
 elif commandLine == cmdMUSIC + ":90646806":
     print('Playing "Sin Señal - Quevedo, Ovy on the Drums"')
-    playsound.playsound('/Users/nipeal/Desktop/kDocs-Terminal/music/Sin Señal - Quevedo, Ovy on the Drums.mp3')
+    playsound.playsound('/kDocs-Terminal/music/Sin Señal - Quevedo, Ovy on the Drums.mp3')
 elif commandLine == cmdMUSIC + ":02834983":
     print('Playing "Bad Habits - Ed Sheeran"')
-    playsound.playsound('/Users/nipeal/Desktop/kDocs-Terminal/music/Ed Sheeran - Bad Habits.mp3')
+    playsound.playsound('/kDocs-Terminal/music/Ed Sheeran - Bad Habits.mp3')
 
 if commandLine == cmdMUSICHELP:
     print("This is some info about the music commands.")
