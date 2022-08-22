@@ -13,3 +13,4 @@ IDE used: VS Code (Visual Studio Code)
 Requirements:
 -An IDE to to run the code (Intercourse Developing Environment),
 -A PC or laptop (Physical Computer)
+-Latest Version of Python, download here: https://www.python.org/downloads/
